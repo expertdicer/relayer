@@ -1,0 +1,18 @@
+{
+    "type": "cosmos",
+    "value": {
+        "key": "alice",
+        "chain-id": "Oraichain-testnet",
+        "rpc-addr": "http://3.143.254.222:46657",
+        "grpc-addr": "",
+        "account-prefix": "orai",
+        "keyring-backend": "test",
+        "gas-adjustment": 1.5,
+        "gas-prices": "0.025orai",
+        "trusting-period": "1h",
+        "debug": true,
+        "timeout": "20s",
+        "output-format": "json",
+        "sign-mode": "direct"
+    }
+}

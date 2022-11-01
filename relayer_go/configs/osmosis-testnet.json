@@ -1,0 +1,18 @@
+{
+    "type": "cosmos",
+    "value": {
+        "key": "bob",
+        "chain-id": "osmo-test-4",
+        "rpc-addr": "https://rpc-test.osmosis.zone:443",
+        "grpc-addr": "",
+        "account-prefix": "osmo",
+        "keyring-backend": "test",
+        "gas-adjustment": 1.2,
+        "trusting-period": "100h",
+        "gas-prices": "0.025uosmo",
+        "debug": true,
+        "timeout": "60s",
+        "output-format": "json",
+        "sign-mode": "direct"
+    }
+}
