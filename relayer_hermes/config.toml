@@ -139,18 +139,18 @@ memo_prefix = ''
 [[chains]]
 id = 'uni-5'
 rpc_addr = 'https://rpc.uni.junonetwork.io:443'
-grpc_addr = 'https://juno-testnet-grpc.polkachu.com:12690'
-websocket_addr = 'ws://juno-testnet-rpc.polkachu.com/websocket'	
+grpc_addr = 'http://juno-testnet-grpc.polkachu.com:12690'
+websocket_addr = 'ws://135.181.59.162:26657/websocket'	# ws://135.181.59.162:26657/websocket
 rpc_timeout = '30s'
 account_prefix = 'juno'
 key_name = 'bob'
 address_type = { derivation = 'cosmos' }
 store_prefix = 'ibc'
-max_gas = 15000000                                                                                          
+max_gas = 10000000                                                                                          
 max_msg_num = 10
-gas_price = { price = 0.0001, denom = 'ujunox' }
+gas_price = { price = 0.03, denom = 'ujunox' }
 gas_multiplier = 2
-clock_drift = '15s'
+clock_drift = '5s'
 trusting_period = '7days'
 trust_threshold = { numerator = '1', denominator = '3' }
 memo_prefix = ''
