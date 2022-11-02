@@ -98,7 +98,7 @@ port = 3001
 [[chains]]
 id = 'Oraichain-testnet'
 rpc_addr = 'http://3.143.254.222:46657'
-grpc_addr = 'http://3.143.254.222:9090'
+grpc_addr = 'http://3.143.254.222:29090'
 websocket_addr = 'ws://3.143.254.222:46657/websocket'
 rpc_timeout = '10s'
 account_prefix = 'orai'
@@ -113,32 +113,47 @@ max_msg_num = 30
 max_tx_size = 2097152
 clock_drift = '5s'
 max_block_time = '30s'
-trusting_period = '7days'
+trusting_period = '1800s'
 trust_threshold = { numerator = '1', denominator = '3' }
 memo_prefix = ''
 
 
+# [[chains]]
+# id = 'osmo-test-4'
+# rpc_addr = 'https://rpc-test.osmosis.zone:443'
+# grpc_addr = 'http://grpc-test.osmosis.zone:443'
+# websocket_addr = 'ws://rpc-test.osmosis.zone:443/websocket'	
+# rpc_timeout = '30s'
+# account_prefix = 'osmo'
+# key_name = 'osmosis'
+# store_prefix = 'ibc'
+# max_gas = 15000000                                                                                          
+# max_msg_num = 10
+# gas_price = { price = 0.0001, denom = 'uosmo' }
+# gas_multiplier = 2
+# clock_drift = '15s'
+# trusting_period = '9days'
+# trust_threshold = { numerator = '1', denominator = '3' }
+# memo_prefix = 'Hacker'
+
 [[chains]]
-id = 'cosmoshub-4'
-rpc_addr = 'http://34.122.34.67:26656'
-grpc_addr = 'http://cosmoshub.strange.love:9090'
-websocket_addr = 'ws://34.122.34.67:26656/websocket'	
+id = 'uni-5'
+rpc_addr = 'https://rpc.uni.junonetwork.io:443'
+grpc_addr = 'https://juno-testnet-grpc.polkachu.com:12690'
+websocket_addr = 'ws://juno-testnet-rpc.polkachu.com/websocket'	
 rpc_timeout = '30s'
-account_prefix = 'osmo'
-key_name = 'osmosis'
+account_prefix = 'juno'
+key_name = 'bob'
+address_type = { derivation = 'cosmos' }
 store_prefix = 'ibc'
 max_gas = 15000000                                                                                          
 max_msg_num = 10
-gas_price = { price = 0.0001, denom = 'uosmo' }
+gas_price = { price = 0.0001, denom = 'ujunox' }
 gas_multiplier = 2
 clock_drift = '15s'
-trusting_period = '9days'
+trusting_period = '7days'
 trust_threshold = { numerator = '1', denominator = '3' }
-memo_prefix = 'Hacker'
-
-
-# A chains section includes parameters related to a chain and the full node to which
-# the relayer can send transactions and queries.
+memo_prefix = ''
 
 
 
